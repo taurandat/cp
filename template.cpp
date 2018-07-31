@@ -19,7 +19,7 @@ template <class T> ll cntbit(T s) { return __builtin_popcountll(s); }
 #define ANSI_COLOR_RESET "\x1B[0m"
 #define ANSI_COLOR_RED   "\x1B[31m"
 #define ANSI_COLOR_BOLD  "\x1B[1m"
-#define log_debug(x) printf("L%d: " ANSI_COLOR_BOLD ANSI_COLOR_RED "%s\n" ANSI_COLOR_RESET, __LINE__, x)
+#define log_debug(x) cout << __LINE__ << ": " << ANSI_COLOR_BOLD ANSI_COLOR_RED << x << ANSI_COLOR_RESET << endl
 
 #define PI (2 * acos((ld)0))
 #define linf (1ll << 60)
@@ -38,6 +38,7 @@ int main() {
   cin.tie(0);
 
   log_debug("Hello world");
+  log_debug(1);
 
   return 0;
 }
